@@ -116,7 +116,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 }
 
                 if (isHasNaviIcon()) {
-                    //toolbar.setNavigationIcon(R.drawable.selector_back);
+                    // 设置导航按钮图标
                     toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
                 }
 
@@ -132,7 +132,8 @@ public abstract class BaseActivity extends AppCompatActivity {
 
                 setSupportActionBar(toolbar);
                 ActionBar actionBar = getSupportActionBar();
-                if (actionBar != null) {
+                if (actionBar != null && isHasNaviIcon()) {
+                    // 设置导航按钮enable
                     actionBar.setDisplayHomeAsUpEnabled(true);
                     actionBar.setHomeButtonEnabled(true);
                 }
