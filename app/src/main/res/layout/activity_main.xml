@@ -12,9 +12,20 @@
         layout="@layout/layout_top"/>
 
     <TextView
+        android:id="@+id/tv_text0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tb_top"
+        android:text="BaseActivity"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_text0"
         android:text="BaseActivity"
         android:textColor="@color/colorAccent"
         android:gravity="center"
